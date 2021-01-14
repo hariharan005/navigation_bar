@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>navigation</title>
+	<meta name="viewport" content="width=device-width", initial-scale=1.0">
+</head>
+<body style="background-image: url(cappriciosec.gif)">
+	<nav class="shadow">
+		<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<img src="icon.svg">
+			</label>
+			<label class="logo">CAPPRICIOSEC</label>
+			<ul>
+				<li><a class="active" href="index.html" >HOME</a> </li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="mentor.html">Mentor</a></li>
+				<li><a href="#">Cappricio university</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+	</nav>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			text-decoration: none;
+			list-style: none;
+			box-sizing: border-box;	
+		}
+		body{
+			font-family: montserrat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		nav{
+			background: #fff;
+			height: 80px;
+			width: 100%;
+		}
+		label.logo{
+			color: black;
+			font-size: 25px;
+			line-height: 80px;
+			padding: 0 100px;
+			font-weight: bold;
+		}
+		nav ul{
+			float: right;
+			margin-right: 20px;
+		}
+		nav ul li{
+			display: inline-block;
+			line-height: 80px;
+			margin: 0 5px;
+		}
+		nav ul li a{
+			color: black;
+			font-size: 17px;
+			padding: 7px 13px;
+			border-radius: 15px;
+			text-transform: uppercase;
+		}
+		a.active,a:hover{
+			background: #1aed07;
+			color: #fff;
+			transition: .5s;
+		}
+		.checkbtn{
+			font-size: 30px;
+			color: white;
+			float: right;
+			line-height: 80px;
+			margin-right: 40px;
+			cursor: pointer;
+			display: none;
+		}
+		#check{
+			display: none;
+		}
+		@media (max-width: 952px){
+			label.logo{
+				font-size: 20px;
+				padding-left: 50px;
+			}
+			nav ul li a{
+				font-size: 16px;
+			}
+		}
+		@media (max-width: 858px){
+			.checkbtn{
+				display:block;
+			}
+			ul{
+				position: fixed;
+				width: 100%;
+				height: 100vh;
+				background: #fff;
+				top: 80px;
+				left: -100%;
+				text-align: center;
+				transition: all .5s;
+			}
+			nav ul li{
+				display: block;
+				margin: 50px 0;
+				line-height: 30px;
+			}
+			nav ul li a{
+				font-size: 20px;
+			}
+			a:hover,a.active{
+				background: none;
+				color: #ffc700;	
+			}
+			#check:checked ~ ul{
+				left: 0;
+			}	
+		}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
